@@ -811,6 +811,7 @@ footer {
 .twitter-footer {
   width: 24px;
   height: 19.5px;
+  margin-top: 2px;
 }
 
 .facebook-footer {
