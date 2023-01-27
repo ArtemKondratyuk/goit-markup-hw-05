@@ -15,13 +15,13 @@
   --svg-background: #8e8f99;
   --buttom-hover-color: #404bbf;
   --svg-icons-background: rgba(255, 255, 255, 0.1);
-  --hover-social-icons: #31d0aa; 
+  --hover-social-icons: #31d0aa;
   --backdrop: rgba(46, 47, 66, 0.4);
-  --modal: #FCFCFC;
-  --modal-box-shadow: rgba(0,0,0,0.14);
+  --modal: #fcfcfc;
+  --modal-box-shadow: rgba(0, 0, 0, 0.14);
   --modal-shadow: rgba(0, 0, 0, 0.2);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 * {
   box-sizing: border-box;
@@ -72,15 +72,15 @@ a {
 
 a:hover {
   color: var(--body-text-color);
-  transition: backgroun-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
-
-  }
+  transition: backgroun-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
+}
 
 a:focus {
   color: var(--primary-brand);
-  transition: backgroun-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
-
- }
+  transition: backgroun-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
+}
 
 h2 {
   margin-bottom: 72px;
@@ -130,7 +130,6 @@ button:hover {
   gap: 40px;
   margin-left: 77px;
   transition: color 250ms var(--cubic-bezier);
-
 }
 
 .active::after {
@@ -139,10 +138,9 @@ button:hover {
   content: "";
   display: block;
   position: absolute;
-  bottom: -3px; 
+  bottom: -3px;
   border-radius: 2px;
   background: var(--buttom-hover-color);
-
 }
 
 .contacts {
@@ -158,16 +156,13 @@ button:hover {
   line-height: 1.5;
   color: var(--text-color);
   padding-top: 24px;
-  padding-bottom: 24px;  
-    
+  padding-bottom: 24px;
 }
 
 .link-menu.active {
   color: var(--primary-brand);
   position: relative;
 }
-
-
 
 /* tel, mail */
 
@@ -255,7 +250,8 @@ button:hover {
   height: 100%;
   background-color: var(--backdrop);
   border-radius: 4px;
-  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -273,9 +269,10 @@ button:hover {
   transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   background-color: var(--modal);
-  box-shadow: 0px 1px 1px var(--modal-box-shadow),  0px 1px 3px var(--btn-hover),
-  0px 2px 1px  var(--box-shadow);
-  transition:  opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
+  box-shadow: 0px 1px 1px var(--modal-box-shadow), 0px 1px 3px var(--btn-hover),
+    0px 2px 1px var(--box-shadow);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
 }
 
 .button-close {
@@ -288,22 +285,19 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: backgroun-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+  transition: backgroun-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
 }
-
 
 .close {
   width: 8px;
   height: 8px;
-
 }
 
 .button-close .close:hover {
   background-color: var(--button-hover-color);
- fill: var(--body-bg-color);
+  fill: var(--body-bg-color);
 }
-
-
 
 /* section text strategy */
 
@@ -474,7 +468,7 @@ button:hover {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .social-icons:hover {
@@ -483,24 +477,22 @@ button:hover {
 
 .social-icons:focus {
   background: var(--buttom-hover-color);
- }
-
-
+}
 
 .social-link {
   padding: 12px;
+  width: 100%;
+  height: 100%;
 }
 
 .instagram {
   width: 16px;
   height: 16px;
-  margin-top: 3px;
 }
 
 .twitter {
   width: 16px;
   height: 16px;
-  margin-top: 2px;
 }
 
 .facebook {
@@ -535,7 +527,6 @@ button:hover {
 .customers-background:hover .YA-CO {
   fill: var(--primary-brand);
 }
-
 
 .tagline-here {
   width: 104px;
@@ -692,21 +683,22 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   opacity: 100%;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;  
+  letter-spacing: 2%;
   padding: 40px 32px 164px;
 }
 
 .text-cards {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.cards-link:hover  .blue-overley{
+.cards-link:hover .blue-overley {
   transform: translateY(0%);
   opacity: 1;
 }
@@ -803,16 +795,17 @@ footer {
 
 .social-icons-footer:hover {
   background-color: var(--hover-social-icons);
-  }
+}
 
 .social-footer-link {
   padding: 8px;
+  width: 100%;
+  height: 100%;
 }
 
 .instagram-footer {
   width: 24px;
   height: 24px;
-  margin-top: 4px;
 }
 
 .twitter-footer {
@@ -823,10 +816,10 @@ footer {
 .facebook-footer {
   width: 12px;
   height: 24px;
+  margin-left: 6px;
 }
 
 .linkedin-footer {
   width: 24px;
   height: 24px;
-  margin-top: 3px;
 }
