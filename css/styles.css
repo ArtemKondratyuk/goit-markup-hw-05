@@ -72,14 +72,10 @@ a {
 
 a:hover {
   color: var(--body-text-color);
-  transition: backgroun-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
 }
 
 a:focus {
   color: var(--primary-brand);
-  transition: backgroun-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
 }
 
 h2 {
@@ -98,6 +94,8 @@ img {
 
 button:hover {
   background: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 /* page studio */
@@ -234,10 +232,13 @@ button:hover {
   letter-spacing: 0.04em;
   margin-top: 48px;
   padding: 16px 28px;
-  border: 1px solid transparent;
+  border: 1px solid transparent; 
 }
+
 .button:hover {
   background: var(--buttom-hover-color);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 /* modal widow */
@@ -285,8 +286,9 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: backgroun-color 250ms var(--cubic-bezier),
+  transition: background-color 250ms var(--cubic-bezier),
     fill 250ms var(--cubic-bezier);
+    cursor: pointer;
 }
 
 .close {
@@ -297,6 +299,8 @@ button:hover {
 .button-close .close:hover {
   background-color: var(--button-hover-color);
   fill: var(--body-bg-color);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 /* section text strategy */
@@ -473,10 +477,14 @@ button:hover {
 
 .social-icons:hover {
   background: var(--buttom-hover-color);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .social-icons:focus {
   background: var(--buttom-hover-color);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .social-link {
@@ -526,6 +534,8 @@ button:hover {
 
 .customers-background:hover .YA-CO {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .tagline-here {
@@ -540,6 +550,8 @@ button:hover {
 
 .customers-background:hover .tagline-here {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .company {
@@ -554,6 +566,8 @@ button:hover {
 
 .customers-background:hover .company {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .foster-peters {
@@ -568,6 +582,8 @@ button:hover {
 
 .customers-background:hover .foster-peters {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .brand {
@@ -582,6 +598,8 @@ button:hover {
 
 .customers-background:hover .brand {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .customers-background {
@@ -590,7 +608,7 @@ button:hover {
   border-radius: 4px;
   width: 168px;
   height: 88px;
-}
+  }
 
 .tag-line {
   width: 104px;
@@ -600,10 +618,12 @@ button:hover {
 
 .customers-background:hover .tag-line {
   fill: var(--primary-brand);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .customers-background:hover {
-  border-color: var(--primary-brand);
+  border-color: var(--primary-brand);  
 }
 
 .customers-link {
@@ -654,6 +674,8 @@ button:hover {
   line-height: 1.5;
   color: var(--body-bg-color);
   border: 1px solid transparent;
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
 }
 
 .content-menu {
@@ -673,6 +695,8 @@ button:hover {
   box-shadow: 0px 1px 6px var(--personal-color), 0px 1px 1px var(--personal),
     0px 2px 1px var(--personal-color);
   border-radius: 0px 0px 4px 4px;
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
 }
 
 .blue-overley {
@@ -791,10 +815,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .social-icons-footer:hover {
   background-color: var(--hover-social-icons);
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
 }
 
 .social-footer-link {
