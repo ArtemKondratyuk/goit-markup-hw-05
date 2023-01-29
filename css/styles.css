@@ -70,12 +70,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--body-text-color);
-}
-
+a:hover,
 a:focus {
-  color: var(--primary-brand);
+    color: var(--primary-brand);
 }
 
 h2 {
@@ -92,10 +89,9 @@ img {
   height: auto;
 }
 
-button:hover {
-  background: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
+button:hover,
+button:focus {
+  background: var(--primary-brand); 
 }
 
 /* page studio */
@@ -126,8 +122,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  margin-left: 77px;
-  transition: color 250ms var(--cubic-bezier);
+  margin-left: 77px; 
 }
 
 .active::after {
@@ -155,6 +150,13 @@ button:hover {
   color: var(--text-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
+}
+
+.link-menu:hover,
+.link-menu:focus {
+ color: var(--primary-brand); 
 }
 
 .link-menu.active {
@@ -175,13 +177,13 @@ button:hover {
   padding-bottom: 24px;
 }
 
-.link-mail:hover {
+.link-mail:hover,
+.link-tel:hover,
+.link-mail:focus,
+.link-tel:focus {
   color: var(--primary-brand);
-}
+} 
 
-.link-tel:hover {
-  color: var(--primary-brand);
-}
 
 /* hero */
 
@@ -233,13 +235,13 @@ button:hover {
   margin-top: 48px;
   padding: 16px 28px;
   border: 1px solid transparent; 
-}
-
-.button:hover {
-  background: var(--buttom-hover-color);
   transition: background-color 250ms var(--cubic-bezier),
   fill 250ms var(--cubic-bezier);
 }
+
+.button:hover {
+  background: var(--buttom-hover-color); 
+   }
 
 /* modal widow */
 
@@ -252,7 +254,7 @@ button:hover {
   background-color: var(--backdrop);
   border-radius: 4px;
   transition: opacity 250ms var(--cubic-bezier),
-    visibility 250ms var(--cubic-bezier);
+  visibility 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -271,24 +273,24 @@ button:hover {
   border-radius: 4px;
   background-color: var(--modal);
   box-shadow: 0px 1px 1px var(--modal-box-shadow), 0px 1px 3px var(--btn-hover),
-    0px 2px 1px var(--box-shadow);
+  0px 2px 1px var(--box-shadow);
   transition: opacity 250ms var(--cubic-bezier),
-    visibility 250ms var(--cubic-bezier);
+  visibility 250ms var(--cubic-bezier);
 }
 
 .button-close {
-  width: 24px;
-  height: 24px;
-  background-color: var(--footer-text-color);
-  border-radius: 50%;
-  border: 1px solid var(--btn-hover-color);
-  margin: 24px 24px 528px 360px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 24px 24px 528px 360px;
+  background-color: var(--footer-text-color);
+  border-radius: 50%;
+  border: 1px solid var(--btn-hover-color);
   transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
-    cursor: pointer;
+  fill 250ms var(--cubic-bezier);
+  cursor: pointer;
 }
 
 .close {
@@ -296,12 +298,13 @@ button:hover {
   height: 8px;
 }
 
-.button-close .close:hover {
-  background-color: var(--button-hover-color);
+.button-close:hover,
+.button-close:focus {
+  background-color: var(--primary-brand);
   fill: var(--body-bg-color);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
 }
+
+
 
 /* section text strategy */
 
@@ -473,18 +476,13 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social-icons:hover {
-  background: var(--buttom-hover-color);
   transition: background-color 250ms var(--cubic-bezier),
   fill 250ms var(--cubic-bezier);
 }
 
+.social-icons:hover,
 .social-icons:focus {
-  background: var(--buttom-hover-color);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
+background: var(--buttom-hover-color); 
 }
 
 .social-link {
@@ -522,108 +520,17 @@ button:hover {
   gap: 24px;
 }
 
-.YA-CO {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.customers-background:hover {
-  border-color: var(--primary-brand);
-}
-
-.customers-background:hover .YA-CO {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
-.tagline-here {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.customers-background:hover {
-  border-color: var(--primary-brand);
-}
-
-.customers-background:hover .tagline-here {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
-.company {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.customers-background:hover {
-  border-color: var(--primary-brand);
-}
-
-.customers-background:hover .company {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
-.foster-peters {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.fcustomers-background:hover {
-  border-color: var(--primary-brand);
-}
-
-.customers-background:hover .foster-peters {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
-.brand {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.customers-background:hover {
-  border-color: var(--primary-brand);
-}
-
-.customers-background:hover .brand {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
 .customers-background {
   background-color: var(--body-bg-color);
   border: 1px solid var(--svg-background);
   border-radius: 4px;
   width: 168px;
-  height: 88px;
+  height: 88px;  
   }
 
-.tag-line {
-  width: 104px;
-  height: 56px;
-  fill: var(--svg-background);
-}
-
-.customers-background:hover .tag-line {
-  fill: var(--primary-brand);
-  transition: background-color 250ms var(--cubic-bezier),
-  fill 250ms var(--cubic-bezier);
-}
-
-.customers-background:hover {
-  border-color: var(--primary-brand);  
+.customers-background:hover,
+.customers-background:focus {
+  border-color: var(--primary-brand);
 }
 
 .customers-link {
@@ -631,6 +538,87 @@ button:hover {
   height: 100%;
   display: block;
   padding: 16px 32px;
+  }
+
+.YA-CO {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
+ 
+}
+
+.customers-background:hover .YA-CO,
+.customers-background:focus .YA-CO {
+  fill: var(--primary-brand);
+}
+
+.tagline-here {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);
+}
+
+.customers-background:hover .tagline-here,
+.customers-background:focus .tagline-here {
+  fill: var(--primary-brand); 
+}
+
+.company {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier); 
+}
+
+.customers-background:hover .company,
+.customers-background:focus .company {
+  fill: var(--primary-brand); 
+}
+
+.foster-peters {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier); 
+}
+
+.customers-background:hover .foster-peters,
+.customers-background:focus .foster-peters {
+  fill: var(--primary-brand);  
+}
+
+.brand {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier); 
+}
+
+.customers-background:hover .brand,
+.customers-background:focus .brand {
+  fill: var(--primary-brand);  
+}
+
+.tag-line {
+  width: 104px;
+  height: 56px;
+  fill: var(--svg-background);
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier); 
+}
+
+.customers-background:hover .tag-line,
+.customers-background:focus .tag-line {
+  fill: var(--primary-brand); 
 }
 
 /* page portfolio */
@@ -653,6 +641,8 @@ button:hover {
   background: var(--logo-studio-footer);
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier); 
 }
 
 .btn-text {
@@ -674,9 +664,7 @@ button:hover {
   line-height: 1.5;
   color: var(--body-bg-color);
   border: 1px solid transparent;
-  transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
-}
+ }
 
 .content-menu {
   display: flex;
@@ -722,7 +710,8 @@ button:hover {
   overflow: hidden;
 }
 
-.cards-link:hover .blue-overley {
+.cards-link:hover .blue-overley,
+.cards-link:focus .blue-overley {
   transform: translateY(0%);
   opacity: 1;
 }
@@ -815,14 +804,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  transition: background-color 250ms var(--cubic-bezier),
+  fill 250ms var(--cubic-bezier);  
 }
 
-.social-icons-footer:hover {
+.social-icons-footer:hover,
+.social-icons-footer:focus {
   background-color: var(--hover-social-icons);
-  transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
-}
+   }
 
 .social-footer-link {
   padding: 8px;
